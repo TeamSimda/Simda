@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bZU-ug-kva" customClass="TodaySeedCard" customModule="iOS_Simda_storyboard" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bZU-ug-kva" customClass="TodaySeedCard" customModule="Simda" customModuleProvider="target">
                                 <rect key="frame" x="24" y="146.66666666666663" width="342" height="300"/>
                                 <subviews>
                                     <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fTF-9y-sQh">
@@ -44,21 +44,21 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Egd-v1-Uyc">
                                         <rect key="frame" x="88.333333333333329" y="263.66666666666663" width="165.33333333333337" height="20.333333333333314"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#오늘은" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dc0-aR-94E" customClass="PaddingLabel" customModule="iOS_Simda_storyboard" customModuleProvider="target">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#오늘은" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dc0-aR-94E" customClass="PaddingLabel" customModule="Simda" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="54.666666666666664" height="20.333333333333332"/>
                                                 <color key="backgroundColor" name="DarkGray"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" name="White"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#기분이" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FPw-9s-DQK" customClass="PaddingLabel" customModule="iOS_Simda_storyboard" customModuleProvider="target">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#기분이" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FPw-9s-DQK" customClass="PaddingLabel" customModule="Simda" customModuleProvider="target">
                                                 <rect key="frame" x="62.666666666666671" y="0.0" width="54.666666666666671" height="20.333333333333332"/>
                                                 <color key="backgroundColor" name="DarkGray"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" name="White"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#냠냠" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zwg-rJ-G7e" customClass="PaddingLabel" customModule="iOS_Simda_storyboard" customModuleProvider="target">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#냠냠" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zwg-rJ-G7e" customClass="PaddingLabel" customModule="Simda" customModuleProvider="target">
                                                 <rect key="frame" x="125.33333333333331" y="0.0" width="40" height="20.333333333333332"/>
                                                 <color key="backgroundColor" name="DarkGray"/>
                                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
@@ -74,15 +74,33 @@
                                             <constraint firstAttribute="width" constant="110" id="pk8-tQ-hZe"/>
                                         </constraints>
                                     </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="d0o-ch-AQs">
+                                        <rect key="frame" x="116" y="124.66666666666666" width="110" height="110"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="110" id="6ZC-Cd-nF6"/>
+                                            <constraint firstAttribute="height" constant="110" id="eTk-LR-HOs"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="I8k-PX-JU3">
+                                        <rect key="frame" x="116" y="124.66666666666666" width="110" height="110"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="110" id="GCd-US-IAT"/>
+                                            <constraint firstAttribute="height" constant="110" id="NP3-oN-Geg"/>
+                                        </constraints>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" name="Background2"/>
                                 <constraints>
+                                    <constraint firstItem="I8k-PX-JU3" firstAttribute="centerX" secondItem="bZU-ug-kva" secondAttribute="centerX" id="3hh-Au-1We"/>
+                                    <constraint firstItem="d0o-ch-AQs" firstAttribute="centerX" secondItem="bZU-ug-kva" secondAttribute="centerX" id="5hV-Bw-0Rr"/>
                                     <constraint firstItem="EiG-6I-bUP" firstAttribute="top" secondItem="Cbp-dh-kTY" secondAttribute="bottom" constant="4" id="DOn-Iu-4lP"/>
                                     <constraint firstItem="kLL-ZE-O2z" firstAttribute="centerX" secondItem="bZU-ug-kva" secondAttribute="centerX" id="EBT-Ts-JxZ"/>
+                                    <constraint firstItem="d0o-ch-AQs" firstAttribute="top" secondItem="EiG-6I-bUP" secondAttribute="bottom" constant="40" id="IFr-5i-jYX"/>
                                     <constraint firstItem="kLL-ZE-O2z" firstAttribute="top" secondItem="EiG-6I-bUP" secondAttribute="bottom" constant="40" id="V2J-9e-QOT"/>
                                     <constraint firstItem="EiG-6I-bUP" firstAttribute="centerX" secondItem="bZU-ug-kva" secondAttribute="centerX" id="YU7-ED-Fh1"/>
                                     <constraint firstItem="Egd-v1-Uyc" firstAttribute="centerX" secondItem="bZU-ug-kva" secondAttribute="centerX" id="bna-gK-f06"/>
                                     <constraint firstItem="Cbp-dh-kTY" firstAttribute="centerX" secondItem="bZU-ug-kva" secondAttribute="centerX" id="eek-J1-81l"/>
+                                    <constraint firstItem="I8k-PX-JU3" firstAttribute="top" secondItem="EiG-6I-bUP" secondAttribute="bottom" constant="40" id="hnx-1R-WHX"/>
                                     <constraint firstItem="fTF-9y-sQh" firstAttribute="centerX" secondItem="bZU-ug-kva" secondAttribute="centerX" id="iIP-zM-tmO"/>
                                     <constraint firstAttribute="height" constant="300" id="ism-H0-fc9"/>
                                     <constraint firstItem="Cbp-dh-kTY" firstAttribute="top" secondItem="bZU-ug-kva" secondAttribute="top" constant="29" id="pSz-Cp-Ffx"/>
@@ -95,7 +113,10 @@
                                     <outlet property="keyword2" destination="FPw-9s-DQK" id="MK0-Nt-RhD"/>
                                     <outlet property="keyword3" destination="Zwg-rJ-G7e" id="L9w-MJ-ldN"/>
                                     <outlet property="plusBtn" destination="fTF-9y-sQh" id="LsQ-XY-Xor"/>
+                                    <outlet property="seedColor" destination="I8k-PX-JU3" id="Lgp-PR-cFy"/>
+                                    <outlet property="seedFace" destination="kLL-ZE-O2z" id="4Rh-uz-2Id"/>
                                     <outlet property="seedName" destination="Cbp-dh-kTY" id="mqx-Ja-73Z"/>
+                                    <outlet property="seedShape" destination="d0o-ch-AQs" id="aim-ZZ-zfJ"/>
                                 </connections>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6개의 씨앗이 진화를 기다려요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d9V-wD-4Pp">
@@ -139,21 +160,21 @@
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="BJV-2O-cvf">
                                                     <rect key="frame" x="24" y="98.333333333333329" width="178" height="18"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#오늘은" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NyN-Ae-qjz" customClass="PaddingLabel" customModule="iOS_Simda_storyboard" customModuleProvider="target">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#오늘은" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NyN-Ae-qjz" customClass="PaddingLabel" customModule="Simda" customModuleProvider="target">
                                                             <rect key="frame" x="0.0" y="0.0" width="48.333333333333336" height="18"/>
                                                             <color key="backgroundColor" name="DarkGray"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                             <color key="textColor" name="White"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#그냥저냥" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I5b-sV-Jh6" customClass="PaddingLabel" customModule="iOS_Simda_storyboard" customModuleProvider="target">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#그냥저냥" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I5b-sV-Jh6" customClass="PaddingLabel" customModule="Simda" customModuleProvider="target">
                                                             <rect key="frame" x="58.333333333333329" y="0.0" width="61.333333333333329" height="18"/>
                                                             <color key="backgroundColor" name="DarkGray"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                             <color key="textColor" name="White"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#어쩌고" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tR0-fj-5FS" customClass="PaddingLabel" customModule="iOS_Simda_storyboard" customModuleProvider="target">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#어쩌고" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tR0-fj-5FS" customClass="PaddingLabel" customModule="Simda" customModuleProvider="target">
                                                             <rect key="frame" x="129.66666666666666" y="0.0" width="48.333333333333343" height="18"/>
                                                             <color key="backgroundColor" name="DarkGray"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -226,7 +247,9 @@
                                     <constraint firstAttribute="height" constant="30" id="jh4-2E-z89"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="calendar" catalog="system"/>
+                                <buttonConfiguration key="configuration" style="plain" image="calendar" catalog="system">
+                                    <color key="baseForegroundColor" name="Gray"/>
+                                </buttonConfiguration>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="오늘의 씨앗을 만들어보세요!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zeL-YJ-qSL">
                                 <rect key="frame" x="24" y="74" width="198" height="52.666666666666657"/>
@@ -279,22 +302,22 @@
         <image name="calendar" catalog="system" width="128" height="107"/>
         <image name="plus" catalog="system" width="128" height="113"/>
         <namedColor name="Background1">
-            <color red="0.094117647058823528" green="0.094117647058823528" blue="0.094117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.093999996781349182" green="0.093999996781349182" blue="0.093999996781349182" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Background2">
-            <color red="0.11764705882352941" green="0.11764705882352941" blue="0.11764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.11800000071525574" green="0.11800000071525574" blue="0.11800000071525574" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="DarkGray">
-            <color red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Gray">
-            <color red="0.72549019607843135" green="0.72549019607843135" blue="0.72549019607843135" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.72500002384185791" green="0.72500002384185791" blue="0.72500002384185791" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Main">
-            <color red="0.62352941176470589" green="0.68235294117647061" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.62400001287460327" green="0.68199998140335083" blue="0.92199999094009399" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="White">
-            <color red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.98000001907348633" green="0.98000001907348633" blue="0.98000001907348633" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

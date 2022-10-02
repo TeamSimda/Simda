@@ -15,9 +15,9 @@ class TodaySeedCard: UIView {
     @IBOutlet weak var keyword2: UILabel!
     @IBOutlet weak var keyword3: UILabel!
     
-//    @IBOutlet weak var seedFace: UIImageView!
-//    @IBOutlet weak var seedShape: UIImageView!
-//    @IBOutlet weak var seedColor: UIImageView!
+    @IBOutlet weak var seedFace: UIImageView!
+    @IBOutlet weak var seedShape: UIImageView!
+    @IBOutlet weak var seedColor: UIImageView!
     
     func setup() {
         keyword1.clipsToBounds = true
