@@ -57,4 +57,29 @@ extension UIColor {
         guard let color = UIColor(named: "Green") else { return .label }
         return color
     }
+    
+    static var Grayish_Purple: UIColor {
+        guard let color = UIColor(named: "Grayish_Purple") else { return .label }
+        return color
+    }
+    
+    static var Grayish_Red: UIColor {
+        guard let color = UIColor(named: "Grayish_Red") else { return .label }
+        return color
+    }
+    
+    static var Grayish_Orange: UIColor {
+        guard let color = UIColor(named: "Grayish_Orange") else { return .label }
+        return color
+    }
+    
+    static var Grayish_Yellow: UIColor {
+        guard let color = UIColor(named: "Grayish_Yellow") else { return .label }
+        return color
+    }
+    
+    static var Grayish_Green: UIColor {
+        guard let color = UIColor(named: "Grayish_Green") else { return .label }
+        return color
+    }
 }
