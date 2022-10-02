@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		F932326128E8AD44009B67A2 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F932326028E8AD44009B67A2 /* Color+Extension.swift */; };
+		F9605CC328E969BE00F360CB /* MainView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9605CC228E969BE00F360CB /* MainView.storyboard */; };
+		F9605CC528E96A8B00F360CB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9605CC428E96A8B00F360CB /* MainViewController.swift */; };
+		F9605CC728E96B1D00F360CB /* TodaySeedCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9605CC628E96B1D00F360CB /* TodaySeedCard.swift */; };
+		F9605CC928E9758300F360CB /* SeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9605CC828E9758300F360CB /* SeedCell.swift */; };
+		F9605CCB28E977B200F360CB /* Label+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9605CCA28E977B200F360CB /* Label+Extension.swift */; };
 		FB94C95628DABB4100E9E3C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB94C95528DABB4100E9E3C1 /* AppDelegate.swift */; };
 		FB94C95828DABB4100E9E3C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB94C95728DABB4100E9E3C1 /* SceneDelegate.swift */; };
 		FB94C95A28DABB4100E9E3C1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB94C95928DABB4100E9E3C1 /* ViewController.swift */; };
@@ -19,6 +24,11 @@
 
 /* Begin PBXFileReference section */
 		F932326028E8AD44009B67A2 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		F9605CC228E969BE00F360CB /* MainView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainView.storyboard; sourceTree = "<group>"; };
+		F9605CC428E96A8B00F360CB /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		F9605CC628E96B1D00F360CB /* TodaySeedCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodaySeedCard.swift; sourceTree = "<group>"; };
+		F9605CC828E9758300F360CB /* SeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeedCell.swift; sourceTree = "<group>"; };
+		F9605CCA28E977B200F360CB /* Label+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Label+Extension.swift"; sourceTree = "<group>"; };
 		FB94C95228DABB4100E9E3C1 /* Simda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Simda.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB94C95528DABB4100E9E3C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB94C95728DABB4100E9E3C1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +73,11 @@
 				FB94C95528DABB4100E9E3C1 /* AppDelegate.swift */,
 				FB94C95728DABB4100E9E3C1 /* SceneDelegate.swift */,
 				FB94C95928DABB4100E9E3C1 /* ViewController.swift */,
+				F9605CC228E969BE00F360CB /* MainView.storyboard */,
+				F9605CC828E9758300F360CB /* SeedCell.swift */,
+				F9605CC428E96A8B00F360CB /* MainViewController.swift */,
+				F9605CC628E96B1D00F360CB /* TodaySeedCard.swift */,
+				F9605CCA28E977B200F360CB /* Label+Extension.swift */,
 				FB94C95B28DABB4100E9E3C1 /* Main.storyboard */,
 				FB94C96128DABB4200E9E3C1 /* Assets.xcassets */,
 				FB94C96328DABB4200E9E3C1 /* LaunchScreen.storyboard */,
@@ -133,6 +148,7 @@
 			files = (
 				FB94C96528DABB4200E9E3C1 /* LaunchScreen.storyboard in Resources */,
 				FB94C96228DABB4200E9E3C1 /* Assets.xcassets in Resources */,
+				F9605CC328E969BE00F360CB /* MainView.storyboard in Resources */,
 				FB94C95D28DABB4100E9E3C1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -146,7 +162,11 @@
 			files = (
 				FB94C96028DABB4100E9E3C1 /* Simda.xcdatamodeld in Sources */,
 				F932326128E8AD44009B67A2 /* Color+Extension.swift in Sources */,
+				F9605CC928E9758300F360CB /* SeedCell.swift in Sources */,
 				FB94C95A28DABB4100E9E3C1 /* ViewController.swift in Sources */,
+				F9605CCB28E977B200F360CB /* Label+Extension.swift in Sources */,
+				F9605CC728E96B1D00F360CB /* TodaySeedCard.swift in Sources */,
+				F9605CC528E96A8B00F360CB /* MainViewController.swift in Sources */,
 				FB94C95628DABB4100E9E3C1 /* AppDelegate.swift in Sources */,
 				FB94C95828DABB4100E9E3C1 /* SceneDelegate.swift in Sources */,
 			);
