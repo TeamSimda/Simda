@@ -6,3 +6,9 @@
 //
 
 import Foundation
+import UIKit
+
+class WriteQuestionTableViewCell: UITableViewCell {
+    
+    @IBOutlet weak var questionLabel: UILabel!
+}
