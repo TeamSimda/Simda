@@ -15,7 +15,7 @@ class SelectQuestionViewController: ViewController {
         // Do any additional setup after loading the view.
     }
     @IBAction func tapNextButton(_ sender: Any) {
-        guard let storyBoard: UIStoryboard = UIStoryboard(name: "MakingStoryView", bundle: nil) as? UIStoryboard else { return }
+        guard let storyBoard: UIStoryboard = UIStoryboard(name: "MakingStoryView", bundle: nil)
         guard let writeDiaryVC = storyBoard.instantiateViewController(withIdentifier: "WriteDiaryView") as? WriteDiaryViewController else { return }
                 
         self.navigationController?.pushViewController(writeDiaryVC, animated: true)
