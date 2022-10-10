@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Kf2-Kx-TMH">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pWe-fZ-d5E">
+                                <rect key="frame" x="0.0" y="47" width="390" height="763"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7fi-AS-YeR" userLabel="contentView">
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="1242"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="냠냠씨앗" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cZU-u8-nA8">
+                                                <rect key="frame" x="27" y="57" width="111" height="38.333333333333343"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="32"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="yCq-Lg-jTd">
+                                                <rect key="frame" x="24" y="108.33333333333334" width="148" height="18"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#오늘은" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZeF-73-vhO" customClass="PaddingLabel" customModule="iOS_Simda_storyboard" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="48.333333333333336" height="18"/>
+                                                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#기분이" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pAk-hz-fSc">
+                                                        <rect key="frame" x="56.333333333333329" y="0.0" width="48.333333333333329" height="18"/>
+                                                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#냠냠" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cPM-V5-ZBS" customClass="PaddingLabel" customModule="iOS_Simda_storyboard" customModuleProvider="target">
+                                                        <rect key="frame" x="112.66666666666664" y="0.0" width="35.333333333333329" height="18"/>
+                                                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1Ii-kn-Axq">
+                                                <rect key="frame" x="236.66666666666666" y="183.33333333333334" width="77.333333333333343" height="77.666666666666657"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="77.5" id="SiR-cf-TDz"/>
+                                                    <constraint firstAttribute="width" constant="77.5" id="dLo-4p-9IP"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="선택한 질문" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5fd-nl-2M0">
+                                                <rect key="frame" x="16" y="309.66666666666669" width="91.333333333333329" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="회고" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wNb-Mm-eKn">
+                                                <rect key="frame" x="15.999999999999996" y="464.66666666666669" width="34.666666666666657" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="abU-IX-oXd">
+                                                <rect key="frame" x="16" y="502.66666666666657" width="358" height="719.33333333333348"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="icL-lk-jir">
+                                                        <rect key="frame" x="16" y="19" width="327" height="680.33333333333337"/>
+                                                        <string key="text">달이 익어가니 서둘러 젊은 피야
+민들레 한 송이 들고
+사랑이 어지러이 떠다니는 밤이야
+날아가 사뿐히 이루렴
+팽팽한 어둠 사이로
+떠오르는 기분
+이 거대한 무중력에 혹 휘청해도
+두렵진 않을 거야
+푸르른 우리 위로
+커다란 strawberry moon 한 스쿱
+나에게 너를 맡겨볼래 eh-oh
+바람을 세로질러
+날아오르는 기분 so cool
+삶이 어떻게 더 완벽해 ooh
+다시 마주하기 어려운 행운이야
+온몸에 심장이 뛰어
+Oh 오히려 기꺼이 헤매고픈 밤이야
+너와 길 잃을 수 있다면
+맞잡은 서로의 손으로
+출입구를 허문
+이 무한함의 끝과 끝 또 위아래로
+비행을 떠날 거야
+푸르른 우리 위로
+커다란 strawberry moon 한 스쿱
+나에게 너를 맡겨볼래 eh-oh
+바람을 세로질러
+날아오르는 기분 so cool
+삶이 어떻게 더 완벽해 ooh
+놀라워 이보다
+꿈같은 순간이 또 있을까 (더 있을까)
+아마도 우리가 처음 발견한
+오늘 이 밤의 모든 것, 그 위로 날아
+푸르른 우리 위로
+커다란 strawberry moon 한 스쿱
+세상을 가져보니 어때 eh-oh
+바람을 세로질러
+날아오르는 기분 so cool
+삶이 어떻게 더 완벽해 ooh</string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <constraints>
+                                                    <constraint firstItem="icL-lk-jir" firstAttribute="leading" secondItem="abU-IX-oXd" secondAttribute="leading" constant="16" id="2tf-ly-q3R"/>
+                                                    <constraint firstAttribute="bottom" secondItem="icL-lk-jir" secondAttribute="bottom" constant="20" id="H5t-Bz-M9R"/>
+                                                    <constraint firstItem="icL-lk-jir" firstAttribute="top" secondItem="abU-IX-oXd" secondAttribute="top" constant="19" id="bVy-VF-0yE"/>
+                                                    <constraint firstAttribute="trailing" secondItem="icL-lk-jir" secondAttribute="trailing" constant="15" id="eQu-K2-g0q"/>
+                                                </constraints>
+                                            </view>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="4t9-Es-q2D">
+                                                <rect key="frame" x="16" y="347.66666666666669" width="358" height="77"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="오늘의 기분을 몇 점으로 표현할 수 있을까?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vAI-wE-D1i" customClass="PaddingLabel" customModule="iOS_Simda_storyboard" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="358" height="20.333333333333332"/>
+                                                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="오늘의 기분을 몇 점으로 표현할 수 있을까?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fgg-Y2-Iwv" customClass="PaddingLabel" customModule="iOS_Simda_storyboard" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="28.333333333333314" width="358" height="20.333333333333329"/>
+                                                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="오늘의 기분을 몇 점으로 표현할 수 있을까?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XUz-jf-ren" customClass="PaddingLabel" customModule="iOS_Simda_storyboard" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="56.666666666666636" width="358" height="20.333333333333336"/>
+                                                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="wNb-Mm-eKn" firstAttribute="top" secondItem="4t9-Es-q2D" secondAttribute="bottom" constant="40" id="0Ip-OO-Yk8"/>
+                                            <constraint firstAttribute="trailing" secondItem="1Ii-kn-Axq" secondAttribute="trailing" constant="76" id="Czz-Mi-25t"/>
+                                            <constraint firstItem="abU-IX-oXd" firstAttribute="leading" secondItem="7fi-AS-YeR" secondAttribute="leading" constant="16" id="DWJ-gf-TKm"/>
+                                            <constraint firstItem="4t9-Es-q2D" firstAttribute="top" secondItem="5fd-nl-2M0" secondAttribute="bottom" constant="14" id="Dxl-gk-zJ9"/>
+                                            <constraint firstItem="yCq-Lg-jTd" firstAttribute="leading" secondItem="7fi-AS-YeR" secondAttribute="leading" constant="24" id="IMH-2S-SuU"/>
+                                            <constraint firstAttribute="trailing" secondItem="4t9-Es-q2D" secondAttribute="trailing" constant="16" id="REp-Y2-Zx3"/>
+                                            <constraint firstItem="5fd-nl-2M0" firstAttribute="top" secondItem="1Ii-kn-Axq" secondAttribute="bottom" constant="48.666666666666686" id="RcM-Rv-ryS"/>
+                                            <constraint firstItem="yCq-Lg-jTd" firstAttribute="top" secondItem="cZU-u8-nA8" secondAttribute="bottom" constant="13" id="XFO-Tf-zbw"/>
+                                            <constraint firstItem="abU-IX-oXd" firstAttribute="top" secondItem="wNb-Mm-eKn" secondAttribute="bottom" constant="14" id="b3D-bR-gZi"/>
+                                            <constraint firstItem="1Ii-kn-Axq" firstAttribute="top" secondItem="yCq-Lg-jTd" secondAttribute="bottom" constant="57" id="ce3-fz-eqq"/>
+                                            <constraint firstItem="cZU-u8-nA8" firstAttribute="top" secondItem="7fi-AS-YeR" secondAttribute="top" constant="57" id="deE-8I-5oV"/>
+                                            <constraint firstItem="5fd-nl-2M0" firstAttribute="leading" secondItem="7fi-AS-YeR" secondAttribute="leading" constant="16" id="e1f-zi-PsY"/>
+                                            <constraint firstAttribute="bottom" secondItem="abU-IX-oXd" secondAttribute="bottom" constant="20" id="gvp-RW-Zuh"/>
+                                            <constraint firstItem="4t9-Es-q2D" firstAttribute="leading" secondItem="7fi-AS-YeR" secondAttribute="leading" constant="16" id="iZI-nZ-hoL"/>
+                                            <constraint firstItem="cZU-u8-nA8" firstAttribute="leading" secondItem="7fi-AS-YeR" secondAttribute="leading" constant="27" id="rcp-E7-PPL"/>
+                                            <constraint firstItem="wNb-Mm-eKn" firstAttribute="leading" secondItem="7fi-AS-YeR" secondAttribute="leading" constant="16" id="sEK-rP-fjU"/>
+                                            <constraint firstAttribute="trailing" secondItem="abU-IX-oXd" secondAttribute="trailing" constant="16" id="u7f-GL-ziB"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="7fi-AS-YeR" secondAttribute="bottom" id="LMC-Cn-ViV"/>
+                                    <constraint firstItem="7fi-AS-YeR" firstAttribute="width" secondItem="dtT-RI-rQS" secondAttribute="width" id="Oau-6M-Ql8"/>
+                                    <constraint firstItem="7fi-AS-YeR" firstAttribute="trailing" secondItem="dUY-0a-F1h" secondAttribute="trailing" id="RjS-mS-bOr"/>
+                                    <constraint firstItem="7fi-AS-YeR" firstAttribute="top" secondItem="dUY-0a-F1h" secondAttribute="top" id="vT0-AX-MJ7"/>
+                                    <constraint firstItem="7fi-AS-YeR" firstAttribute="leading" secondItem="dUY-0a-F1h" secondAttribute="leading" id="wTU-ZJ-OUw"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="dUY-0a-F1h"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="dtT-RI-rQS"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="4ok-9U-NqG"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="4ok-9U-NqG" firstAttribute="trailing" secondItem="pWe-fZ-d5E" secondAttribute="trailing" id="00y-k5-QZW"/>
+                            <constraint firstItem="pWe-fZ-d5E" firstAttribute="leading" secondItem="4ok-9U-NqG" secondAttribute="leading" id="Ql1-I3-0b9"/>
+                            <constraint firstItem="pWe-fZ-d5E" firstAttribute="height" secondItem="4ok-9U-NqG" secondAttribute="height" priority="250" id="bFw-6e-ccR"/>
+                            <constraint firstItem="pWe-fZ-d5E" firstAttribute="top" secondItem="4ok-9U-NqG" secondAttribute="top" id="c5D-HL-5WW"/>
+                            <constraint firstItem="4ok-9U-NqG" firstAttribute="bottom" secondItem="pWe-fZ-d5E" secondAttribute="bottom" id="rga-tc-FQl"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="84" y="-2"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
