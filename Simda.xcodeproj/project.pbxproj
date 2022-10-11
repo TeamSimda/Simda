@@ -7,12 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3410A8A628F530D90079C0C2 /* SelectQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3410A8A428F530D80079C0C2 /* SelectQuestionViewController.swift */; };
+		3410A8A728F530D90079C0C2 /* WriteDiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3410A8A528F530D80079C0C2 /* WriteDiaryViewController.swift */; };
+		3410A8A928F531030079C0C2 /* QuestionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3410A8A828F531030079C0C2 /* QuestionModel.swift */; };
 		341E0AF628EC82DB0093856F /* SelectQuestionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341E0AF528EC82DB0093856F /* SelectQuestionTableViewCell.swift */; };
 		341E0AF828EC94DD0093856F /* WriteQuestionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341E0AF728EC94DD0093856F /* WriteQuestionTableViewCell.swift */; };
 		3442554C28EC74D60009861C /* MakingStoryView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3442554B28EC74D60009861C /* MakingStoryView.storyboard */; };
-		3442554E28EC77670009861C /* SelectQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3442554D28EC77670009861C /* SelectQuestionViewController.swift */; };
-		3442555028EC7CAC0009861C /* WriteDiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3442554F28EC7CAC0009861C /* WriteDiaryViewController.swift */; };
-		3442555228EC7F790009861C /* QuestionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3442555128EC7F790009861C /* QuestionModel.swift */; };
+		F932326128E8AD44009B67A2 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F932326028E8AD44009B67A2 /* Color+Extension.swift */; };
 		FB94C95628DABB4100E9E3C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB94C95528DABB4100E9E3C1 /* AppDelegate.swift */; };
 		FB94C95828DABB4100E9E3C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB94C95728DABB4100E9E3C1 /* SceneDelegate.swift */; };
 		FB94C95A28DABB4100E9E3C1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB94C95928DABB4100E9E3C1 /* ViewController.swift */; };
@@ -23,12 +24,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3410A8A428F530D80079C0C2 /* SelectQuestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectQuestionViewController.swift; sourceTree = "<group>"; };
+		3410A8A528F530D80079C0C2 /* WriteDiaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WriteDiaryViewController.swift; sourceTree = "<group>"; };
+		3410A8A828F531030079C0C2 /* QuestionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionModel.swift; sourceTree = "<group>"; };
 		341E0AF528EC82DB0093856F /* SelectQuestionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectQuestionTableViewCell.swift; sourceTree = "<group>"; };
 		341E0AF728EC94DD0093856F /* WriteQuestionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteQuestionTableViewCell.swift; sourceTree = "<group>"; };
+		3436DB9628F420A60065963B /* Empty.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Empty.md; sourceTree = "<group>"; };
+		3436DB9728F420B20065963B /* Empty.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Empty.md; sourceTree = "<group>"; };
 		3442554B28EC74D60009861C /* MakingStoryView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MakingStoryView.storyboard; sourceTree = "<group>"; };
-		3442554D28EC77670009861C /* SelectQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectQuestionViewController.swift; sourceTree = "<group>"; };
-		3442554F28EC7CAC0009861C /* WriteDiaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteDiaryViewController.swift; sourceTree = "<group>"; };
-		3442555128EC7F790009861C /* QuestionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionModel.swift; sourceTree = "<group>"; };
+		F932326028E8AD44009B67A2 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		FB94C95228DABB4100E9E3C1 /* Simda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Simda.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB94C95528DABB4100E9E3C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB94C95728DABB4100E9E3C1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,22 +55,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3436DB9528F420970065963B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3436DB9628F420A60065963B /* Empty.md */,
+				3410A8A828F531030079C0C2 /* QuestionModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		3442554528EC704D0009861C /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				3410A8A428F530D80079C0C2 /* SelectQuestionViewController.swift */,
+				3410A8A528F530D80079C0C2 /* WriteDiaryViewController.swift */,
 				FB94C95928DABB4100E9E3C1 /* ViewController.swift */,
-				3442554D28EC77670009861C /* SelectQuestionViewController.swift */,
-				3442554F28EC7CAC0009861C /* WriteDiaryViewController.swift */,
 			);
 			path = ViewControllers;
-			sourceTree = "<group>";
-		};
-		3442554628EC705B0009861C /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				3442555128EC7F790009861C /* QuestionModel.swift */,
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		3442554728EC706D0009861C /* Resources */ = {
@@ -80,6 +85,8 @@
 		3442554828EC70E50009861C /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				F932326028E8AD44009B67A2 /* Color+Extension.swift */,
+				3436DB9728F420B20065963B /* Empty.md */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -115,10 +122,10 @@
 		FB94C95428DABB4100E9E3C1 /* Simda */ = {
 			isa = PBXGroup;
 			children = (
+				3436DB9528F420970065963B /* Models */,
 				FB94C95528DABB4100E9E3C1 /* AppDelegate.swift */,
 				FB94C95728DABB4100E9E3C1 /* SceneDelegate.swift */,
 				3442554728EC706D0009861C /* Resources */,
-				3442554628EC705B0009861C /* Models */,
 				3442554828EC70E50009861C /* Extensions */,
 				3442554528EC704D0009861C /* ViewControllers */,
 				34BCCF7428EC7022003B7043 /* Views */,
@@ -200,15 +207,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3442555228EC7F790009861C /* QuestionModel.swift in Sources */,
-				3442555028EC7CAC0009861C /* WriteDiaryViewController.swift in Sources */,
+				3410A8A728F530D90079C0C2 /* WriteDiaryViewController.swift in Sources */,
+				3410A8A628F530D90079C0C2 /* SelectQuestionViewController.swift in Sources */,
 				341E0AF828EC94DD0093856F /* WriteQuestionTableViewCell.swift in Sources */,
 				FB94C96028DABB4100E9E3C1 /* Simda.xcdatamodeld in Sources */,
+				F932326128E8AD44009B67A2 /* Color+Extension.swift in Sources */,
 				FB94C95A28DABB4100E9E3C1 /* ViewController.swift in Sources */,
-				3442554E28EC77670009861C /* SelectQuestionViewController.swift in Sources */,
 				341E0AF628EC82DB0093856F /* SelectQuestionTableViewCell.swift in Sources */,
 				FB94C95628DABB4100E9E3C1 /* AppDelegate.swift in Sources */,
 				FB94C95828DABB4100E9E3C1 /* SceneDelegate.swift in Sources */,
+				3410A8A928F531030079C0C2 /* QuestionModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
