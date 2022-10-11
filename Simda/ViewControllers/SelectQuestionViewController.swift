@@ -11,22 +11,37 @@ class SelectQuestionViewController: ViewController {
 
     
     @IBOutlet weak var selectQuestionTableView: UITableView!
+    @IBOutlet weak var nextButton: UIButton!
+    
     var selectedQuestions: [Bool] = []
+    var countSelectedQuestions: Int = 0 {
+        didSet {
+            if countSelectedQuestions == 0 {
+                nextButton.backgroundColor = .Gray
+            } else {
+                nextButton.backgroundColor = .Main
+            }
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         selectedQuestions = Array(repeating: false, count: QuestionModel.dummyQuestion.count)
+    
     }
+ 
     
     @IBAction func tapNextButton(_ sender: Any) {
-        guard let storyBoard: UIStoryboard = UIStoryboard(name: "MakingStoryView", bundle: nil) as? UIStoryboard else { return }
-        guard let writeDiaryVC = storyBoard.instantiateViewController(withIdentifier: "WriteDiaryView") as? WriteDiaryViewController else { return }
-                
-        writeDiaryVC.selectedQuestions = getSelectedQuestions()
-        
-        self.navigationController?.pushViewController(writeDiaryVC, animated: true)
+        if countSelectedQuestions != 0 {
+            guard let storyBoard: UIStoryboard = UIStoryboard(name: "MakingStoryView", bundle: nil) as? UIStoryboard else { return }
+            guard let writeDiaryVC = storyBoard.instantiateViewController(withIdentifier: "WriteDiaryView") as? WriteDiaryViewController else { return }
+            
+            writeDiaryVC.selectedQuestions = getSelectedQuestions()
+            
+            self.navigationController?.pushViewController(writeDiaryVC, animated: true)
+        }
     }
     
     func getSelectedQuestions() -> [String] {
@@ -63,10 +78,15 @@ extension SelectQuestionViewController: UITableViewDataSource {
 
 extension SelectQuestionViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        guard let cell = tableView.cellForRow(at: indexPath) as? SelectQuestionTableViewCell else { return }
-        cell.isMarked = true
         
-        selectedQuestions[indexPath.row] = true
+        if countSelectedQuestions < 3 {
+            guard let cell = tableView.cellForRow(at: indexPath) as? SelectQuestionTableViewCell else { return }
+            cell.isMarked = true
+            
+            selectedQuestions[indexPath.row] = true
+            
+            countSelectedQuestions += 1
+        }
     }
     
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
@@ -74,5 +94,7 @@ extension SelectQuestionViewController: UITableViewDelegate {
         cell.isMarked = false
         
         selectedQuestions[indexPath.row] = false
+        
+        countSelectedQuestions -= 1
     }
 }

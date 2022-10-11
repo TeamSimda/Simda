@@ -18,6 +18,8 @@ class WriteDiaryViewController: ViewController {
     
     @IBOutlet weak var titleField: UILabel!
     @IBOutlet weak var diaryField: UITextView!
+    @IBOutlet weak var saveButton: UIButton!
+
     
     // Editing View
     @IBOutlet weak var editingView: UIView!
@@ -32,10 +34,18 @@ class WriteDiaryViewController: ViewController {
     var diaryContent: String = ""
     
     var questionTableViewCellHeight: CGFloat = 35
+    var isSavable: Bool = false {
+        didSet {
+            if isSavable {
+                saveButton.backgroundColor = .Main
+            } else {
+                saveButton.backgroundColor = .Gray
+            }
+        }
+    }
     
     var isEditingDiary: Bool = false {
         didSet {
-            
             UIView.animate(withDuration: 0.3) {
                 self.editingView.alpha = self.isEditingDiary ? 1 : 0
             }
@@ -104,11 +114,14 @@ class WriteDiaryViewController: ViewController {
         diaryField.text = diaryContent
         
         isEditingDiary = false
+        
+        isSavable = titleContent != "" && diaryContent != ""
     }
     
     @IBAction func tapSaveButton(_ sender: Any) {
-        self.checkRetrospectView.isHidden = false
-        self.navigationController?.isNavigationBarHidden = true
+        if isSavable {
+            self.checkRetrospectView.isHidden = false
+        }
     }
     
     @IBAction func tapShowQuestionTableViewButton(_ sender: Any) {

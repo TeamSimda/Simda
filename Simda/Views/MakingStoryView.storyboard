@@ -146,6 +146,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="Dbn-Fe-kSc"/>
                     <connections>
+                        <outlet property="nextButton" destination="Mft-Bc-i6l" id="gZG-XF-Dun"/>
                         <outlet property="selectQuestionTableView" destination="ijb-6S-lPg" id="y1I-uv-Sbu"/>
                     </connections>
                 </viewController>
@@ -240,7 +241,7 @@
                                                 </constraints>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                        <integer key="value" value="20"/>
+                                                        <integer key="value" value="25"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
@@ -358,6 +359,11 @@
                                             <fontDescription key="titleFontDescription" type="boldSystem" pointSize="17"/>
                                             <color key="baseForegroundColor" name="White"/>
                                         </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="tapFinishEditingButton:" destination="9us-gO-bFD" eventType="touchUpInside" id="EcF-8S-Qoc"/>
                                         </connections>
@@ -523,6 +529,7 @@
                         <outlet property="paddingViewHeightContraint" destination="ssW-LU-nMK" id="OZU-kc-uyW"/>
                         <outlet property="questionListViewHeightConstraint" destination="ye6-tV-qX0" id="LGD-NM-PpO"/>
                         <outlet property="questionTableView" destination="TLG-M9-sw3" id="fPB-LL-d2R"/>
+                        <outlet property="saveButton" destination="rTV-uf-naF" id="Mvb-UJ-33l"/>
                         <outlet property="titleField" destination="1V0-JR-6X5" id="YjK-vf-B3R"/>
                     </connections>
                 </viewController>
