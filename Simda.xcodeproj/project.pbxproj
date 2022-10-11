@@ -19,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3436DB9628F420A60065963B /* Empty.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Empty.md; sourceTree = "<group>"; };
+		3436DB9728F420B20065963B /* Empty.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Empty.md; sourceTree = "<group>"; };
 		F932326028E8AD44009B67A2 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		F998C31B28F40CB300743801 /* DetailView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailView.storyboard; sourceTree = "<group>"; };
 		FB94C95228DABB4100E9E3C1 /* Simda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Simda.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,19 +45,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3436DB9528F420970065963B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3436DB9628F420A60065963B /* Empty.md */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		3442554528EC704D0009861C /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				FB94C95928DABB4100E9E3C1 /* ViewController.swift */,
 			);
 			path = ViewControllers;
-			sourceTree = "<group>";
-		};
-		3442554628EC705B0009861C /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		3442554728EC706D0009861C /* Resources */ = {
@@ -69,6 +72,7 @@
 		3442554828EC70E50009861C /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				3436DB9728F420B20065963B /* Empty.md */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -102,10 +106,10 @@
 		FB94C95428DABB4100E9E3C1 /* Simda */ = {
 			isa = PBXGroup;
 			children = (
+				3436DB9528F420970065963B /* Models */,
 				FB94C95528DABB4100E9E3C1 /* AppDelegate.swift */,
 				FB94C95728DABB4100E9E3C1 /* SceneDelegate.swift */,
 				3442554728EC706D0009861C /* Resources */,
-				3442554628EC705B0009861C /* Models */,
 				3442554828EC70E50009861C /* Extensions */,
 				3442554528EC704D0009861C /* ViewControllers */,
 				34BCCF7428EC7022003B7043 /* Views */,
