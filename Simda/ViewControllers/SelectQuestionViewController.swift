@@ -54,16 +54,25 @@ extension SelectQuestionViewController: UITableViewDataSource {
         
         cell.questionLabel.text = QuestionModel.dummyQuestion[indexPath.row].question
         
+        cell.questionBackground.layer.borderColor = UIColor.DarkGray.cgColor
+        cell.questionBackground.layer.borderWidth = 1
+        
         return cell
     }
 }
 
 extension SelectQuestionViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let cell = tableView.cellForRow(at: indexPath) as? SelectQuestionTableViewCell else { return }
+        cell.isMarked = true
+        
         selectedQuestions[indexPath.row] = true
     }
     
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+        guard let cell = tableView.cellForRow(at: indexPath) as? SelectQuestionTableViewCell else { return }
+        cell.isMarked = false
+        
         selectedQuestions[indexPath.row] = false
     }
 }

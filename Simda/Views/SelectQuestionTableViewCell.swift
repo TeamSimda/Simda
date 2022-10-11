@@ -9,5 +9,18 @@ import Foundation
 import UIKit
 
 class SelectQuestionTableViewCell: UITableViewCell {
+    
+    var isMarked: Bool  = false {
+        didSet {
+            if isMarked {
+                questionBackground.backgroundColor = .DarkGray
+            } else {
+                questionBackground.backgroundColor = .none
+            }
+        }
+    }
+    
+    @IBOutlet weak var questionBackground: UIView!
     @IBOutlet weak var questionLabel: UILabel!
 }
+

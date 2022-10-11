@@ -31,7 +31,7 @@ class WriteDiaryViewController: ViewController {
     var titleContent: String = ""
     var diaryContent: String = ""
     
-    var questionTableViewCellHeight: CGFloat = 30
+    var questionTableViewCellHeight: CGFloat = 35
     
     var isEditingDiary: Bool = false {
         didSet {
@@ -45,9 +45,10 @@ class WriteDiaryViewController: ViewController {
     var isShowingQuestionTableView: Bool = true {
         didSet {
             // 함수 호출
+            
             if isShowingQuestionTableView {
                 print("true")
-                questionListViewHeightConstraint.constant = CGFloat(50 + selectedQuestions.count * 30)
+                questionListViewHeightConstraint.constant = CGFloat(60 + selectedQuestions.count * Int(CGFloat(questionTableViewCellHeight)))
             } else {
                 print("false")
                 questionListViewHeightConstraint.constant = 50
