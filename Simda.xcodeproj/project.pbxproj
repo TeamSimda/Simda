@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F932326128E8AD44009B67A2 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F932326028E8AD44009B67A2 /* Color+Extension.swift */; };
+		F9762CAB28F84AB200AD0CB7 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9762CAA28F84AB200AD0CB7 /* MainViewController.swift */; };
+		F9762CAD28F84AE300AD0CB7 /* Label+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9762CAC28F84AE300AD0CB7 /* Label+Extension.swift */; };
+		F9762CB128F84AF600AD0CB7 /* MainView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9762CAE28F84AF600AD0CB7 /* MainView.storyboard */; };
+		F9762CB228F84AF600AD0CB7 /* SeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9762CAF28F84AF600AD0CB7 /* SeedCell.swift */; };
+		F9762CB328F84AF600AD0CB7 /* TodaySeedCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9762CB028F84AF600AD0CB7 /* TodaySeedCard.swift */; };
 		FB94C95628DABB4100E9E3C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB94C95528DABB4100E9E3C1 /* AppDelegate.swift */; };
 		FB94C95828DABB4100E9E3C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB94C95728DABB4100E9E3C1 /* SceneDelegate.swift */; };
 		FB94C95A28DABB4100E9E3C1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB94C95928DABB4100E9E3C1 /* ViewController.swift */; };
@@ -17,7 +23,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		FB94C95228DABB4100E9E3C1 /* Simda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Simda.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3436DB9628F420A60065963B /* Empty.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Empty.md; sourceTree = "<group>"; };
+		3436DB9728F420B20065963B /* Empty.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Empty.md; sourceTree = "<group>"; };
+		F932326028E8AD44009B67A2 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		F9762CAA28F84AB200AD0CB7 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		F9762CAC28F84AE300AD0CB7 /* Label+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Label+Extension.swift"; sourceTree = "<group>"; };
+		F9762CAE28F84AF600AD0CB7 /* MainView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainView.storyboard; sourceTree = "<group>"; };
+		F9762CAF28F84AF600AD0CB7 /* SeedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeedCell.swift; sourceTree = "<group>"; };
+		F9762CB028F84AF600AD0CB7 /* TodaySeedCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodaySeedCard.swift; sourceTree = "<group>"; };
+		FB94C95228DABB4100E9E3C1 /* Simda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = Simda.app; path = "/Users/jeonjimin/Documents/AppleChallenge/MC1/Test/Simda/build/Debug-iphoneos/Simda.app"; sourceTree = "<absolute>"; };
 		FB94C95528DABB4100E9E3C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB94C95728DABB4100E9E3C1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FB94C95928DABB4100E9E3C1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -39,33 +53,72 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3436DB9528F420970065963B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3436DB9628F420A60065963B /* Empty.md */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3442554528EC704D0009861C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F9762CAA28F84AB200AD0CB7 /* MainViewController.swift */,
+				FB94C95928DABB4100E9E3C1 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		3442554728EC706D0009861C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FB94C96128DABB4200E9E3C1 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3442554828EC70E50009861C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F9762CAC28F84AE300AD0CB7 /* Label+Extension.swift */,
+				3436DB9728F420B20065963B /* Empty.md */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		34BCCF7428EC7022003B7043 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F9762CAE28F84AF600AD0CB7 /* MainView.storyboard */,
+				F9762CAF28F84AF600AD0CB7 /* SeedCell.swift */,
+				F9762CB028F84AF600AD0CB7 /* TodaySeedCard.swift */,
+				FB94C95B28DABB4100E9E3C1 /* Main.storyboard */,
+				FB94C96328DABB4200E9E3C1 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		FB94C94928DABB4100E9E3C1 = {
 			isa = PBXGroup;
 			children = (
 				FB94C95428DABB4100E9E3C1 /* Simda */,
-				FB94C95328DABB4100E9E3C1 /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		FB94C95328DABB4100E9E3C1 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				FB94C95228DABB4100E9E3C1 /* Simda.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		FB94C95428DABB4100E9E3C1 /* Simda */ = {
 			isa = PBXGroup;
 			children = (
+				3436DB9528F420970065963B /* Models */,
 				FB94C95528DABB4100E9E3C1 /* AppDelegate.swift */,
 				FB94C95728DABB4100E9E3C1 /* SceneDelegate.swift */,
-				FB94C95928DABB4100E9E3C1 /* ViewController.swift */,
-				FB94C95B28DABB4100E9E3C1 /* Main.storyboard */,
-				FB94C96128DABB4200E9E3C1 /* Assets.xcassets */,
-				FB94C96328DABB4200E9E3C1 /* LaunchScreen.storyboard */,
+				3442554728EC706D0009861C /* Resources */,
+				3442554828EC70E50009861C /* Extensions */,
+				3442554528EC704D0009861C /* ViewControllers */,
+				34BCCF7428EC7022003B7043 /* Views */,
 				FB94C96628DABB4200E9E3C1 /* Info.plist */,
 				FB94C95E28DABB4100E9E3C1 /* Simda.xcdatamodeld */,
+				F932326028E8AD44009B67A2 /* Color+Extension.swift */,
 			);
 			path = Simda;
 			sourceTree = "<group>";
@@ -114,7 +167,7 @@
 				Base,
 			);
 			mainGroup = FB94C94928DABB4100E9E3C1;
-			productRefGroup = FB94C95328DABB4100E9E3C1 /* Products */;
+			productRefGroup = FB94C94928DABB4100E9E3C1;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -130,6 +183,7 @@
 			files = (
 				FB94C96528DABB4200E9E3C1 /* LaunchScreen.storyboard in Resources */,
 				FB94C96228DABB4200E9E3C1 /* Assets.xcassets in Resources */,
+				F9762CB128F84AF600AD0CB7 /* MainView.storyboard in Resources */,
 				FB94C95D28DABB4100E9E3C1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -142,9 +196,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB94C96028DABB4100E9E3C1 /* Simda.xcdatamodeld in Sources */,
+				F932326128E8AD44009B67A2 /* Color+Extension.swift in Sources */,
 				FB94C95A28DABB4100E9E3C1 /* ViewController.swift in Sources */,
+				F9762CAD28F84AE300AD0CB7 /* Label+Extension.swift in Sources */,
 				FB94C95628DABB4100E9E3C1 /* AppDelegate.swift in Sources */,
 				FB94C95828DABB4100E9E3C1 /* SceneDelegate.swift in Sources */,
+				F9762CB228F84AF600AD0CB7 /* SeedCell.swift in Sources */,
+				F9762CAB28F84AB200AD0CB7 /* MainViewController.swift in Sources */,
+				F9762CB328F84AF600AD0CB7 /* TodaySeedCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
