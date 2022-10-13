@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
+                <viewController id="Y6W-OH-hqX" customClass="DetailViewController" customModule="Simda" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Kf2-Kx-TMH">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -20,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="47" width="390" height="763"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7fi-AS-YeR" userLabel="contentView">
-                                        <rect key="frame" x="0.0" y="0.0" width="390" height="1306.3333333333333"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="1320"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="냠냠씨앗" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cZU-u8-nA8">
                                                 <rect key="frame" x="27" y="57" width="111" height="38.333333333333343"/>
@@ -156,11 +156,12 @@ Oh 오히려 기꺼이 헤매고픈 밤이야
                                                 </constraints>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s1Q-wa-Pk5">
-                                                <rect key="frame" x="17" y="1242" width="356" height="34.333333333333258"/>
+                                                <rect key="frame" x="17" y="1242" width="356" height="48"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="48" id="HHO-9G-dEs"/>
+                                                </constraints>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" title="Button">
-                                                    <color key="baseBackgroundColor" name="Main"/>
-                                                </buttonConfiguration>
+                                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" name="Background1"/>
@@ -209,6 +210,19 @@ Oh 오히려 기꺼이 헤매고픈 밤이야
                             <constraint firstItem="4ok-9U-NqG" firstAttribute="bottom" secondItem="pWe-fZ-d5E" secondAttribute="bottom" id="rga-tc-FQl"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="contentBackgroundView" destination="abU-IX-oXd" id="QLk-oj-H2Q"/>
+                        <outlet property="diaryContent" destination="icL-lk-jir" id="2Un-5p-Hor"/>
+                        <outlet property="diaryTitle" destination="wNb-Mm-eKn" id="v71-bW-yzn"/>
+                        <outlet property="evolveButton" destination="s1Q-wa-Pk5" id="UHe-cX-eIO"/>
+                        <outlet property="keyword1" destination="ZeF-73-vhO" id="ApM-tE-jcV"/>
+                        <outlet property="keyword2" destination="pAk-hz-fSc" id="snU-Pi-wLv"/>
+                        <outlet property="keyword3" destination="cPM-V5-ZBS" id="hy4-hN-CRY"/>
+                        <outlet property="question1" destination="vAI-wE-D1i" id="bOE-J5-XmT"/>
+                        <outlet property="question2" destination="Fgg-Y2-Iwv" id="nAg-un-Ak1"/>
+                        <outlet property="question3" destination="XUz-jf-ren" id="uYB-H6-Me3"/>
+                        <outlet property="seedName" destination="cZU-u8-nA8" id="eJW-x3-PTG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
