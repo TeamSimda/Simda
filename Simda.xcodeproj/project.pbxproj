@@ -26,17 +26,12 @@
 		3436DB9628F420A60065963B /* Empty.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Empty.md; sourceTree = "<group>"; };
 		3436DB9728F420B20065963B /* Empty.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Empty.md; sourceTree = "<group>"; };
 		F932326028E8AD44009B67A2 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
-		F9605CC228E969BE00F360CB /* MainView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainView.storyboard; sourceTree = "<group>"; };
-		F9605CC428E96A8B00F360CB /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		F9605CC628E96B1D00F360CB /* TodaySeedCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodaySeedCard.swift; sourceTree = "<group>"; };
-		F9605CC828E9758300F360CB /* SeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeedCell.swift; sourceTree = "<group>"; };
-		F9605CCA28E977B200F360CB /* Label+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Label+Extension.swift"; sourceTree = "<group>"; };
 		F9762CAA28F84AB200AD0CB7 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		F9762CAC28F84AE300AD0CB7 /* Label+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Label+Extension.swift"; sourceTree = "<group>"; };
 		F9762CAE28F84AF600AD0CB7 /* MainView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainView.storyboard; sourceTree = "<group>"; };
 		F9762CAF28F84AF600AD0CB7 /* SeedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeedCell.swift; sourceTree = "<group>"; };
 		F9762CB028F84AF600AD0CB7 /* TodaySeedCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodaySeedCard.swift; sourceTree = "<group>"; };
-		FB94C95228DABB4100E9E3C1 /* Simda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Simda.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB94C95228DABB4100E9E3C1 /* Simda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = Simda.app; path = "/Users/jeonjimin/Documents/AppleChallenge/MC1/Test/Simda/build/Debug-iphoneos/Simda.app"; sourceTree = "<absolute>"; };
 		FB94C95528DABB4100E9E3C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB94C95728DABB4100E9E3C1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FB94C95928DABB4100E9E3C1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -104,33 +99,11 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		F9762CA928F84A9000AD0CB7 /* Recovered References */ = {
-			isa = PBXGroup;
-			children = (
-				F9605CC828E9758300F360CB /* SeedCell.swift */,
-				F9605CCA28E977B200F360CB /* Label+Extension.swift */,
-				F9605CC628E96B1D00F360CB /* TodaySeedCard.swift */,
-				F9605CC428E96A8B00F360CB /* MainViewController.swift */,
-				F9605CC228E969BE00F360CB /* MainView.storyboard */,
-			);
-			name = "Recovered References";
-			sourceTree = "<group>";
-		};
 		FB94C94928DABB4100E9E3C1 = {
 			isa = PBXGroup;
 			children = (
 				FB94C95428DABB4100E9E3C1 /* Simda */,
-				FB94C95328DABB4100E9E3C1 /* Products */,
-				F9762CA928F84A9000AD0CB7 /* Recovered References */,
 			);
-			sourceTree = "<group>";
-		};
-		FB94C95328DABB4100E9E3C1 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				FB94C95228DABB4100E9E3C1 /* Simda.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		FB94C95428DABB4100E9E3C1 /* Simda */ = {
@@ -194,7 +167,7 @@
 				Base,
 			);
 			mainGroup = FB94C94928DABB4100E9E3C1;
-			productRefGroup = FB94C95328DABB4100E9E3C1 /* Products */;
+			productRefGroup = FB94C94928DABB4100E9E3C1;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
