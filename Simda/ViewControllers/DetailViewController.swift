@@ -25,6 +25,10 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var contentBackgroundView: UIView!
     @IBOutlet weak var evolveButton: UIButton!
     
+    
+    @IBOutlet weak var shape: UIImageView!
+    @IBOutlet weak var face: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -50,6 +54,8 @@ class DetailViewController: UIViewController {
         evolveButton.clipsToBounds = true
         evolveButton.layer.cornerRadius = 25
     }
+    
+    //TODO: 모델 생성 후 수정 필요
     private func setSeedDetail() {
         self.seedName.text = "test"
         self.seedName.textColor = UIColor(named: "Red")
@@ -62,6 +68,10 @@ class DetailViewController: UIViewController {
         self.diaryTitle.text = "냠냠한 하루"
         self.diaryContent.text = "아아아아ㅏ아아나는 일기를 쓴다"
         self.evolveButton.tintColor = UIColor(named: "Red")
+        self.evolveButton.setTitle("진화하기", for: .normal)
+        self.shape.image = UIImage(named: "shape_8")
+        self.shape.tintColor = UIColor(named: "Red")
+        self.face.image = UIImage(named: "face_8")
     }
 
 
