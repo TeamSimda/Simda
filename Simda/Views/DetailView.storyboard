@@ -77,21 +77,21 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="4t9-Es-q2D">
                                                 <rect key="frame" x="16" y="340" width="358" height="77"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="오늘의 기분을 몇 점으로 표현할 수 있을까?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vAI-wE-D1i" customClass="QuestionLabel" customModule="Simda" customModuleProvider="target">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="오늘의 기분을 몇 점으로 표현할 수 있을까?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vAI-wE-D1i" customClass="QuestionLabel" customModule="Simda" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="358" height="20.333333333333332"/>
                                                         <color key="backgroundColor" name="DarkGray"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" name="White"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="오늘의 기분을 몇 점으로 표현할 수 있을까?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fgg-Y2-Iwv" customClass="QuestionLabel" customModule="Simda" customModuleProvider="target">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="오늘의 기분을 몇 점으로 표현할 수 있을까?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fgg-Y2-Iwv" customClass="QuestionLabel" customModule="Simda" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="28.333333333333314" width="358" height="20.333333333333329"/>
                                                         <color key="backgroundColor" name="DarkGray"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" name="White"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="오늘의 기분을 몇 점으로 표현할 수 있을까?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XUz-jf-ren" customClass="QuestionLabel" customModule="Simda" customModuleProvider="target">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="오늘의 기분을 몇 점으로 표현할 수 있을까?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XUz-jf-ren" customClass="QuestionLabel" customModule="Simda" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="56.666666666666693" width="358" height="20.333333333333336"/>
                                                         <color key="backgroundColor" name="DarkGray"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
