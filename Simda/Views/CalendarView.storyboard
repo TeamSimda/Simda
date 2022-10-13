@@ -74,36 +74,27 @@
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BCd-ih-bgd">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shape_9" translatesAutoresizingMaskIntoConstraints="NO" id="BCd-ih-bgd">
                                         <rect key="frame" x="248" y="44" width="68" height="68"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="68" id="S5m-ed-kSQ"/>
                                             <constraint firstAttribute="width" constant="68" id="wjs-i6-RUO"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pjZ-Jk-9YG">
-                                        <rect key="frame" x="248" y="44" width="68" height="68"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="face_1" translatesAutoresizingMaskIntoConstraints="NO" id="pjZ-Jk-9YG">
+                                        <rect key="frame" x="267" y="70" width="30" height="30"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="68" id="092-gZ-HL8"/>
-                                            <constraint firstAttribute="width" constant="68" id="C7p-QH-Uew"/>
-                                        </constraints>
-                                    </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ToX-9t-4VI">
-                                        <rect key="frame" x="248" y="44" width="68" height="68"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="68" id="1GT-xJ-Tl4"/>
-                                            <constraint firstAttribute="height" constant="68" id="DAD-Sr-xRN"/>
+                                            <constraint firstAttribute="height" constant="30" id="092-gZ-HL8"/>
+                                            <constraint firstAttribute="width" constant="30" id="C7p-QH-Uew"/>
                                         </constraints>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" name="Background2"/>
                                 <constraints>
-                                    <constraint firstItem="ToX-9t-4VI" firstAttribute="top" secondItem="muZ-dY-Ba4" secondAttribute="top" constant="44" id="3Qd-RA-7kM"/>
                                     <constraint firstItem="7nC-8t-8SD" firstAttribute="top" secondItem="muZ-dY-Ba4" secondAttribute="top" constant="24" id="4oj-Hv-5nG"/>
-                                    <constraint firstItem="pjZ-Jk-9YG" firstAttribute="top" secondItem="muZ-dY-Ba4" secondAttribute="top" constant="44" id="BWt-Eo-DXE"/>
-                                    <constraint firstAttribute="trailing" secondItem="ToX-9t-4VI" secondAttribute="trailing" constant="26" id="F8N-E7-TLh"/>
+                                    <constraint firstItem="pjZ-Jk-9YG" firstAttribute="top" secondItem="muZ-dY-Ba4" secondAttribute="top" constant="70" id="BWt-Eo-DXE"/>
                                     <constraint firstItem="7nC-8t-8SD" firstAttribute="leading" secondItem="muZ-dY-Ba4" secondAttribute="leading" constant="20" id="G8o-9m-Xg7"/>
-                                    <constraint firstAttribute="trailing" secondItem="pjZ-Jk-9YG" secondAttribute="trailing" constant="26" id="K9X-EL-6m0"/>
+                                    <constraint firstAttribute="trailing" secondItem="pjZ-Jk-9YG" secondAttribute="trailing" constant="45" id="K9X-EL-6m0"/>
                                     <constraint firstItem="35B-Vf-1Vc" firstAttribute="leading" secondItem="muZ-dY-Ba4" secondAttribute="leading" constant="20" id="QWG-1P-9fq"/>
                                     <constraint firstItem="BCd-ih-bgd" firstAttribute="top" secondItem="muZ-dY-Ba4" secondAttribute="top" constant="44" id="WSS-lK-JjO"/>
                                     <constraint firstAttribute="height" constant="140" id="X7T-Tv-9l0"/>
@@ -133,6 +124,13 @@
                     </view>
                     <connections>
                         <outlet property="calendarView" destination="Dio-2c-lb4" id="Cp1-I4-bgZ"/>
+                        <outlet property="date" destination="35B-Vf-1Vc" id="WnD-2s-8vl"/>
+                        <outlet property="face" destination="pjZ-Jk-9YG" id="7hE-3g-KO2"/>
+                        <outlet property="keyword1" destination="muI-Sp-RDf" id="0YN-HY-N92"/>
+                        <outlet property="keyword2" destination="Ban-rD-XMF" id="kjF-Pi-8Kt"/>
+                        <outlet property="keyword3" destination="ZfZ-Eb-eUy" id="aFQ-c9-xVj"/>
+                        <outlet property="seedName" destination="7nC-8t-8SD" id="A08-MO-mEP"/>
+                        <outlet property="shape" destination="BCd-ih-bgd" id="apF-E1-LJi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -141,6 +139,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="face_1" width="26" height="23"/>
+        <image name="shape_9" width="61" height="56"/>
         <namedColor name="Background1">
             <color red="0.093999996781349182" green="0.093999996781349182" blue="0.093999996781349182" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

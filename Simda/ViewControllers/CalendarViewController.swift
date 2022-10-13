@@ -11,8 +11,16 @@ import FSCalendar
 class CalendarViewController: UIViewController {
 
     @IBOutlet weak var calendarView: FSCalendar!
-    
 
+    @IBOutlet weak var seedName: UILabel!
+    @IBOutlet weak var date: UILabel!
+    @IBOutlet weak var keyword1: UILabel!
+    @IBOutlet weak var keyword2: UILabel!
+    @IBOutlet weak var keyword3: UILabel!
+    
+    @IBOutlet weak var shape: UIImageView!
+    @IBOutlet weak var face: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -34,17 +42,17 @@ extension CalendarViewController: FSCalendarDelegate, FSCalendarDelegateAppearan
         calendarView.scrollEnabled = true
         calendarView.scrollDirection = .vertical
         
-        calendarView.appearance.headerTitleFont = UIFont.systemFont(ofSize: 22)
         calendarView.appearance.weekdayFont = UIFont.systemFont(ofSize: 15)
         calendarView.appearance.titleFont = UIFont.systemFont(ofSize: 15)
+        calendarView.appearance.headerTitleFont = UIFont.systemFont(ofSize: 22)
         
         //header 설정
-        calendarView.appearance.headerDateFormat = "YYYY년 MM월"
+        calendarView.appearance.headerDateFormat = "   YYYY년 MM월"
         calendarView.appearance.headerTitleColor = UIColor.White
         calendarView.appearance.headerTitleAlignment = .justified
         calendarView.headerHeight = 50
         calendarView.appearance.headerMinimumDissolvedAlpha = 0.0
-        
+        calendarView.firstWeekday = 1
         //달력 글자 색 설정
         calendarView.appearance.weekdayTextColor = UIColor.White
         calendarView.appearance.titleDefaultColor = UIColor.White
@@ -73,5 +81,19 @@ extension CalendarViewController: FSCalendarDelegate, FSCalendarDelegateAppearan
     //날짜 선택 해재 막기
     func calendar(_ calendar: FSCalendar, shouldDeselect date: Date, at monthPosition: FSCalendarMonthPosition) -> Bool {
         return false
+    }
+    //날짜 선택 시 실행되는 함수
+    func calendar(_ calendar: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition) {
+        
+        self.seedName.text = "test"
+        self.seedName.textColor = UIColor(named: "Grayish_Yellow")
+        self.date.text = "test2"
+        self.keyword1.text = "keyword1"
+        self.keyword2.text = "keyword2"
+        self.keyword3.text = "keyword3"
+        
+        self.shape.image = UIImage(named: "shape_3")
+        self.shape.tintColor = UIColor(named: "Grayish_Yellow")
+        self.face.image = UIImage(named: "face_8")
     }
 }
