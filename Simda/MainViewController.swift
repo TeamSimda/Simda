@@ -10,6 +10,11 @@ class MainViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var todaySeedCard: TodaySeedCard!
     @IBOutlet weak var pageControl: UIPageControl!
+    @IBOutlet weak var plusButton: UIButton!
+    @IBOutlet weak var todayLabel: UILabel!
+    
+    //TODO: 임의로 userdefault사용으로 가정 추후 변경
+    private var isSeedCreated = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,8 +22,18 @@ class MainViewController: UIViewController {
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.decelerationRate = .fast
-        todaySeedCard.layer.cornerRadius = 20
-        todaySeedCard.setup()
+
+        plusButton.isHidden = isSeedCreated
+        todaySeedCard.isHidden = !isSeedCreated
+        
+        if isSeedCreated {
+            todayLabel.text = "오늘의 씨앗을 \n만드셨네요!"
+            todaySeedCard.layer.cornerRadius = 20
+            todaySeedCard.setUI()
+            todaySeedCard.setCard(seedName: "test", date: "date", keyword1: "keyword1", keyword2: "keyword2", keyword3: "keyword3", shapeIndex: 1, faceIndex: 1, colorName: "Red")
+        }
+        
+        
     }
     
     @IBAction func pageValueDidChanged(_ sender: UIPageControl) {
@@ -41,8 +56,10 @@ extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSour
 //        self.pageControl?.currentPage = Int(roundedIndex)
 //    }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        let count = 6
+        //진화할 씨앗 갯수 반환하는 부분
+        let count = 7
         
+        //위의 갯수에 따라서 indicator조절
         pageControl.numberOfPages = count
         pageControl.isHidden = !(count > 1)
         return count
@@ -58,6 +75,7 @@ extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSour
         cell.keyword2.layer.cornerRadius = 14
         cell.keyword3.clipsToBounds = true
         cell.keyword3.layer.cornerRadius = 14
+        cell.setSeedCell()
         
         return cell
     }

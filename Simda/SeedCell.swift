@@ -16,5 +16,18 @@ class SeedCell: UICollectionViewCell {
     
     @IBOutlet weak var seedFace: UIImageView!
     @IBOutlet weak var seedShape: UIImageView!
-    @IBOutlet weak var seedColor: UIImageView!
+    
+    //TODO: 데이터모델을 받아오는 방식에 따라 수정 필요
+    func setSeedCell() {
+        self.seedName.text = "seedName"
+        self.seedName.textColor = UIColor(named: "Red")
+        self.date.text = "date"
+        self.keyword1.text = "keyword1"
+        self.keyword2.text = "keyword2"
+        self.keyword3.text = "keyword3"
+        
+        self.seedFace.image = UIImage(named: "face_\(1)")
+        self.seedShape.image = UIImage(named: "shape_\(1)")
+        self.seedShape.tintColor = UIColor(named: "Red")
+    }
 }
