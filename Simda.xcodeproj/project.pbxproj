@@ -70,6 +70,9 @@
 		3436DB9528F420970065963B /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				FBA44C9E28F862D4003BDF17 /* Seed+CoreDataClass.swift */,
+				FBA44C9F28F862D4003BDF17 /* Seed+CoreDataProperties.swift */,
+				FBA44C9C28F855EF003BDF17 /* CoreDataManager.swift */,
 				3436DB9628F420A60065963B /* Empty.md */,
 				3410A8A828F531030079C0C2 /* QuestionModel.swift */,
 			);
@@ -81,9 +84,6 @@
 			children = (
 				3410A8A428F530D80079C0C2 /* SelectQuestionViewController.swift */,
 				3410A8A528F530D80079C0C2 /* WriteDiaryViewController.swift */,
-				FBA44C9E28F862D4003BDF17 /* Seed+CoreDataClass.swift */,
-				FBA44C9F28F862D4003BDF17 /* Seed+CoreDataProperties.swift */,
-				FBA44C9C28F855EF003BDF17 /* CoreDataManager.swift */,
 				FB94C95928DABB4100E9E3C1 /* ViewController.swift */,
 				F9C52D1A28F834250098B8E8 /* DetailViewController.swift */,
 			);
